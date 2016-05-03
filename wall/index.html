@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>瀑布流</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <div class="left"></div>
+    <div class="right">
+        <div class="miux_wall">
+            <div class="miux_wall_box">
+                <div class="all_box">
+                    <div class="wall_box_img">
+                        <img src="images/img2.jpg">
+                    </div>
+                    <div class="wall_box_tool pt10">
+                        <button>采集</button>
+                        <button>点赞</button>
+                    </div>
+                    <div class="wall_box_user pt10">
+                        阿斯顿卡上的阿克苏河
+                    </div>
+                </div>
+            </div>
+
+            <div class="miux_wall_box">
+                <div class="all_box">
+                    <div class="wall_box_img">
+                        <img src="images/img22.jpg">
+                    </div>
+                    <div class="wall_box_tool pt10">
+                        <button>采集</button>
+                        <button>点赞</button>
+                    </div>
+                    <div class="wall_box_user pt10">
+                        阿斯顿卡上的阿克苏河
+                    </div>
+                </div>
+            </div>
+            <div class="miux_wall_box">
+                <div class="all_box">
+                    <div class="wall_box_img">
+                        <img src="images/img21.jpg">
+                    </div>
+                    <div class="wall_box_tool pt10">
+                        <button>采集</button>
+                        <button>点赞</button>
+                    </div>
+                    <div class="wall_box_user pt10">
+                        阿斯顿卡上的阿克苏河
+                    </div>
+                </div>
+            </div>
+            <div class="miux_wall_box">
+                <div class="all_box">
+                    <div class="wall_box_img">
+                        <img src="images/img20.jpg">
+                    </div>
+                    <div class="wall_box_tool pt10">
+                        <button>采集</button>
+                        <button>点赞</button>
+                    </div>
+                    <div class="wall_box_user pt10">
+                        阿斯顿卡上的阿克苏河
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="miux_wall_box">
+                <div class="all_box">
+                    <div class="wall_box_img">
+                        <img src="images/img27.jpg">
+                    </div>
+                    <div class="wall_box_tool pt10">
+                        <button>采集</button>
+                        <button>点赞</button>
+                    </div>
+                    <div class="wall_box_user pt10">
+                        阿斯顿卡上的阿克苏河
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="miux_wall_box">
+                <div class="all_box">
+                    <div class="wall_box_img">
+                        <img src="images/img17.jpg">
+                    </div>
+                    <div class="wall_box_tool pt10">
+                        <button>采集</button>
+                        <button>点赞</button>
+                    </div>
+                    <div class="wall_box_user pt10">
+                        阿斯顿卡上的阿克苏河
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="miux_wall_box">
+                <div class="all_box">
+                    <div class="wall_box_img">
+                        <img src="images/img16.jpg">
+                    </div>
+                    <div class="wall_box_tool pt10">
+                        <button>采集</button>
+                        <button>点赞</button>
+                    </div>
+                    <div class="wall_box_user pt10">
+                        阿斯顿卡上的阿克苏河
+                    </div>
+                </div>
+            </div>
+            <div class="miux_wall_box">
+                <div class="all_box">
+                    <div class="wall_box_img">
+                        <img src="images/img15.jpg">
+                    </div>
+                    <div class="wall_box_tool pt10">
+                        <button>采集</button>
+                        <button>点赞</button>
+                    </div>
+                    <div class="wall_box_user pt10">
+                        阿斯顿卡上的阿克苏河
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/jQuery.fn.wall.js"></script>
+    <script type="text/javascript" src="js/mock-min.js"></script>
+    <script type="text/javascript">
+        var Random = Mock.Random;
+        Mock.mock('http://g.cn', {
+            "success": true,
+            "data|1-20": [{
+                'src': Random.dataImage('200')
+            }]
+        })
+
+
+
+        $('.miux_wall').MiuxWall({
+            method: 'http://g.cn'
+        })
+
+    </script>
+</body>
+
+</html>

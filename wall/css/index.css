@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.miux_wall {
+    height: 100%;
+    position: relative;
+}
+
+.pt10 {
+    padding-top: 10px;
+}
+
+.miux_wall_box {
+    padding: 15px 0 0 15px;
+    float: left;
+}
+
+.all_box {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    width: 185px;
+}
+
+#laod_next {
+    position: fixed;
+    bottom: 0;
+    width: 55%;
+    background: green;
+    color: #fff;
+    text-align: center;
+    height: 30px;
+}
+
+.left {
+    float: left;
+    width: 35%;
+    position: relative;
+    height: 1000px;
+    background: #333
+}
+
+.right {
+    float: right;
+    width: 60%;
+    position: relative;
+    height: 100%;
+}
+
+.wall_box_img img {
+    width: 165px;
+    height: auto;
+}
+
+.wall_box_user {
+    font-size: 14px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
